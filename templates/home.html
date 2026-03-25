@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex justify-content-between mb-3">
+    <h2>Student List</h2>
+    <a href="/add/" class="btn btn-primary">➕ Add Student</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.email }}</td>
+            <td>
+                <a href="/update/{{ student.id }}/" class="btn btn-warning btn-sm">Edit</a>
+                <a href="/delete/{{ student.id }}/" 
+                   class="btn btn-danger btn-sm"
+                   onclick="return confirm('Are you sure?')">
+                   Delete
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endblock %}
