@@ -136,8 +136,8 @@ This project can be deployed using:
 **Harris Pervez**
 
 * GitHub: https://github.com/Harris-Pervez
-* LinkedIn: (Add your LinkedIn link here)
-
+💼 LinkedIn: https://www.linkedin.com/in/harris-pervez
+📧 Email: harrykhan0910@gmail.com
 ---
 
 ## 💡 Future Improvements
